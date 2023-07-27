@@ -112,3 +112,9 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
