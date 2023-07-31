@@ -7,7 +7,7 @@ on:
   workflow_run: # This will not run this flow automatically on commit
     workflows: ["Generate daily horoscope"]
     type:
-      - complete
+      - completed
 
   workflow_dispatch:
 
