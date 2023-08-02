@@ -30,8 +30,8 @@ jobs:
           git push
   build:
     needs: generate
-    - uses: ./.github/workflows/hugo.yaml
-      permissions:
-        contents: read
-        pages: write
-        id-token: write
+    uses: ./.github/workflows/hugo.yaml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
