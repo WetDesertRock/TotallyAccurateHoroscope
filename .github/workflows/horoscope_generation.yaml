@@ -29,6 +29,7 @@ jobs:
           git commit -m "Add horoscope for `date +'%Y-%m-%d'`"
           git push
   build:
+    needs: generate
     - uses: ./.github/workflows/hugo.yaml
       permissions:
         contents: read
