@@ -35,6 +35,8 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
       - name: Install Dart Sass
         run: sudo snap install dart-sass
+      - name: Sleep # Hope this fixes the pull pulling a commit early
+        run: sleep 10s
       - name: Checkout
         uses: actions/checkout@v3
         with:
