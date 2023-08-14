@@ -23,7 +23,7 @@ defaults:
     shell: bash
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.115.4
